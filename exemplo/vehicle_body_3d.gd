@@ -13,7 +13,11 @@ var steer_target:float = 0
 var acelerador: float = 0
 
 func _physics_process(delta: float) -> void:
-	acelerador = 0
+	acelerador = 0 
+	if Input.is_action_just_pressed("marcha_cima") && current_gear < (gears.size()-1):
+		current_gear+=1
+	if Input.is_action_just_pressed("marcha_baixo") && current_gear > 0:
+		current_gear-=1
 
 	steer_target = Input.get_action_strength("virar_esquerda") - Input.get_action_strength("virar_direita")
 	steer_target *= STEER_LIMIT
@@ -27,8 +31,8 @@ func _physics_process(delta: float) -> void:
 	
 	if acelerador > 0:
 		acelerador += 0.3 # 0.4, 0.5, 0.7 ;; sem essa linha é impossivel chegar a 1.0
-		engine_force = (torque * acelerador * (gears[current_gear] * drive)) / wheel_radius
+		engine_force = (torque * acelerador * (gears[current_gear] * drive))
 	else:
 		engine_force = 0
-	print(linear_velocity)
+	
 	steering = move_toward(steering, steer_target, STEER_SPEED * delta)
