@@ -31,7 +31,7 @@ radius = 0.25
 height = 0.5
 
 [node name="VehicleBody3D" type="VehicleBody3D"]
-mass = 1500.0
+mass = 500.0
 center_of_mass_mode = 1
 script = ExtResource("1_x31a8")
 
@@ -65,7 +65,6 @@ mesh = SubResource("SphereMesh_3wmsh")
 
 [node name="esquerda_frente" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.484, 0.13496, 1.08506)
-use_as_traction = true
 use_as_steering = true
 wheel_radius = 0.255
 
@@ -74,7 +73,6 @@ mesh = SubResource("SphereMesh_d41w2")
 
 [node name="direita_frente" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.507, 0.13496, 1.13506)
-use_as_traction = true
 use_as_steering = true
 wheel_radius = 0.255
 
