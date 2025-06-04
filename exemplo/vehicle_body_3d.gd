@@ -66,4 +66,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		engine_force = 0
 	
+	if Input.is_action_pressed("freio"):
+		brake = 70
+	elif Input.is_action_just_released("freio"):
+		brake = 0
+	
 	steering = move_toward(steering, steer_target, STEER_SPEED * delta)
