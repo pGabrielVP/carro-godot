@@ -1,6 +1,5 @@
 extends VehicleBody3D
 
-var torque: int = 500
 var drive: float = 4.20
 var gears: Array[float] = [3.30, 2.20, 1.80, 1.50, 1.30]
 var reverse_gear: float = -3.0
@@ -13,8 +12,8 @@ var MAX_ENGINE_RPM: float = 8000.0
  
 const STEER_SPEED:float  = 1.0
 const STEER_LIMIT:float = 0.2
-var steer_target:float = 0
 
+var steer_target:float = 0
 var acelerador: float = 0
 
 func calculate_rpm() -> float:
