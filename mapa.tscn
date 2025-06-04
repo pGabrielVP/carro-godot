@@ -34,7 +34,3 @@ mesh = SubResource("BoxMesh_noarx")
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_2jh14")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9918, 0)
 power_curve = SubResource("Curve_2jh14")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 1.42109e-14, 8.74227e-08, 4.37114e-08, 0.866025, 0.5, -7.57103e-08, 0.5, -0.866025, 0, 62.9544, -50.4287)
-fov = 52.3

@@ -1,6 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://danf8yuuhd45m"]
+[gd_scene load_steps=12 format=3 uid="uid://danf8yuuhd45m"]
 
 [ext_resource type="Script" uid="uid://g8og0ahwqsfg" path="res://exemplo/vehicle_body_3d.gd" id="1_x31a8"]
+[ext_resource type="Script" uid="uid://cg7eubxuf8ouv" path="res://exemplo/camera_3d.gd" id="2_n5xty"]
+
+[sub_resource type="Curve" id="Curve_8nbig"]
+_data = [Vector2(0, 0.0880597), 0.0, 0.0, 0, 0, Vector2(0.122744, 0.117164), 1.09483, 1.09483, 0, 0, Vector2(0.963899, 1), 0.230341, 0.230341, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3wmsh"]
 size = Vector3(1, 1, 2.88599)
@@ -34,6 +39,7 @@ height = 0.5
 mass = 300.0
 center_of_mass_mode = 1
 script = ExtResource("1_x31a8")
+power_curve = SubResource("Curve_8nbig")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.680467, 0.102661)
@@ -78,3 +84,8 @@ wheel_radius = 0.255
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="direita_frente"]
 mesh = SubResource("SphereMesh_uq1ss")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, -1.9253e-14, -8.74228e-08, -3.71551e-08, 0.905191, 0.425005, 7.91343e-08, 0.425005, -0.905191, 0, 2.83141, -3.6277)
+fov = 51.1
+script = ExtResource("2_n5xty")
