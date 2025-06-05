@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5xj5njue5mqe"]
+[gd_scene load_steps=5 format=3 uid="uid://c5xj5njue5mqe"]
 
 [ext_resource type="PackedScene" uid="uid://danf8yuuhd45m" path="res://exemplo/vehicle_body_3d.tscn" id="1_2jh14"]
 [ext_resource type="PackedScene" uid="uid://bhj7vmcbd6tlt" path="res://pista.tscn" id="2_70f7c"]
+[ext_resource type="PackedScene" uid="uid://4fhnj4n0l7m7" path="res://hud.tscn" id="3_q8ihy"]
 
 [sub_resource type="Curve" id="Curve_2jh14"]
 _data = [Vector2(0, 0.0880597), 0.0, 0.0, 0, 0, Vector2(0.133574, 0.0977612), 0.358308, 0.358308, 0, 0, Vector2(0.963899, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -15,6 +16,9 @@ shadow_enabled = true
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_2jh14")]
 transform = Transform3D(-0.0347426, 0, -0.999396, 0, 1, 0, 0.999396, 0, -0.0347426, -9.82434, 3.01676, -19.7519)
+mass = 500.0
 power_curve = SubResource("Curve_2jh14")
 
 [node name="Node3D" parent="." instance=ExtResource("2_70f7c")]
+
+[node name="HUD" parent="." instance=ExtResource("3_q8ihy")]
