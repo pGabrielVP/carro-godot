@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhj7vmcbd6tlt"]
+
+[ext_resource type="Texture2D" uid="uid://pyxwuu5186rm" path="res://textura/asfalto_corrida/textures/asphalt_track_diff_4k.jpg" id="1_7gt8j"]
+
+[sub_resource type="Curve3D" id="Curve3D_0fk5m"]
+closed = true
+_data = {
+"points": PackedVector3Array(-24.7147, -0.00546265, 1.47581, 24.7147, 0.00546265, -1.47581, 60.0945, 0.0184631, -19.8022, 7.60297, -5.06103, 5.79921, -7.60297, 5.06103, -5.79921, 62.0419, 17.842, -81.0005, 31.1419, -0.000991821, 3.4325, -31.1419, 0.000991821, -3.4325, 28.1439, 0.0927124, -115.008, 29.9168, 6.66966, 13.3281, -29.9168, -6.66966, -13.3281, -45.3642, 19.6903, -109.986, 43.3626, -2.40587, 2.60462, -43.3626, 2.40587, -2.60462, -74.4781, 3.24835, -55.2972, 0, 0, 0, 0, 0, 0, -16.5988, 0.855571, -21.8649),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i6cd8"]
+albedo_texture = ExtResource("1_7gt8j")
+texture_filter = 5
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_0fk5m")
+
+[node name="Pista" type="CSGPolygon3D" parent="."]
+use_collision = true
+polygon = PackedVector2Array(0, 0, 0, 0.6, 6, 0.6, 6, 0)
+mode = 2
+path_node = NodePath("../Path3D")
+path_interval_type = 0
+path_interval = 0.12
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = true
+smooth_faces = true
+material = SubResource("StandardMaterial3D_i6cd8")
