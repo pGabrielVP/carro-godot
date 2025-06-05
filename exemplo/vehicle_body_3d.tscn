@@ -8,7 +8,7 @@ _data = [Vector2(0, 0.0880597), 0.0, 0.0, 0, 0, Vector2(0.122744, 0.117164), 1.0
 point_count = 4
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3wmsh"]
-size = Vector3(1, 1, 2.88599)
+size = Vector3(1, 0.821014, 2.64191)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x31a8"]
 albedo_color = Color(1, 0.596078, 1, 1)
@@ -42,7 +42,7 @@ script = ExtResource("1_x31a8")
 power_curve = SubResource("Curve_8nbig")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.680467, 0.102661)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.717103, 0.0105288)
 shape = SubResource("BoxShape3D_3wmsh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -57,6 +57,8 @@ mesh = SubResource("CapsuleMesh_x31a8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.483693, 0.13496, -1.06381)
 use_as_traction = true
 wheel_radius = 0.255
+suspension_travel = 0.5
+suspension_stiffness = 20.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="esquerda_tras"]
 mesh = SubResource("SphereMesh_x31a8")
@@ -65,6 +67,8 @@ mesh = SubResource("SphereMesh_x31a8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.507, 0.13496, -1.064)
 use_as_traction = true
 wheel_radius = 0.255
+suspension_travel = 0.5
+suspension_stiffness = 20.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="direita_tras"]
 mesh = SubResource("SphereMesh_3wmsh")
@@ -73,6 +77,8 @@ mesh = SubResource("SphereMesh_3wmsh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.484, 0.13496, 1.08506)
 use_as_steering = true
 wheel_radius = 0.255
+suspension_travel = 0.5
+suspension_stiffness = 20.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="esquerda_frente"]
 mesh = SubResource("SphereMesh_d41w2")
@@ -81,6 +87,8 @@ mesh = SubResource("SphereMesh_d41w2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.507, 0.13496, 1.13506)
 use_as_steering = true
 wheel_radius = 0.255
+suspension_travel = 0.5
+suspension_stiffness = 20.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="direita_frente"]
 mesh = SubResource("SphereMesh_uq1ss")

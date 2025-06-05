@@ -12,8 +12,8 @@ var MAX_ENGINE_FORCE: float = 700.0
 var MAX_ENGINE_RPM: float = 8000.0
 @export var power_curve: Curve = null
  
-const STEER_SPEED:float  = 1.0
-const STEER_LIMIT:float = 0.2
+const STEER_SPEED:float  = 1.5
+const STEER_LIMIT:float = 0.4
 
 var steer_target:float = 0
 var acelerador: float = 0
