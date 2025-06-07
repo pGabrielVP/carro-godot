@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5xj5njue5mqe"]
+
+[ext_resource type="PackedScene" uid="uid://it2kdyiowds2" path="res://arcade_style_control/carro.tscn" id="1_2jh14"]
+
+[sub_resource type="Curve3D" id="Curve3D_70f7c"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 19.4819, 0, -60.3946, 31.087, -12.0476, 19.2082, -31.087, 12.0476, -19.2082, -315.007, 0, -71.48, -14.6393, 5.67506, 19.0013, 14.6393, -5.67506, -19.0013, -283.856, 0, -338.997, -18.898, 0.712799, -26.4117, 18.898, -0.712799, 26.4117, -210.951, 0, -336.393, -37.4612, -3.03818, -36.4128, 37.4612, 3.03818, 36.4128, -218.762, 0, -172.356, -71.0858, -17.0191, 3.84422, 71.0858, 17.0191, -3.84422, 252.519, 0, -159.338, 90.7153, 21.696, -6.30022, -90.7153, -21.696, 6.30022, 253.82, 0, -61.6965),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.691916, 0.721978, 0, -0.721978, 0.691916, 0, 46.2562, 0)
+
+[node name="Pista" type="Node3D" parent="."]
+
+[node name="Path3D" type="Path3D" parent="Pista"]
+curve = SubResource("Curve3D_70f7c")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Pista/Path3D"]
+use_collision = true
+polygon = PackedVector2Array(-10, 0, -10, 2, 10, 2, 10, 0)
+mode = 2
+path_node = NodePath("..")
+path_interval_type = 0
+path_interval = 0.1
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = true
+
+[node name="Carro" parent="." instance=ExtResource("1_2jh14")]
+transform = Transform3D(-0.0115887, 0, -0.999933, 0, 1, 0, 0.999933, 0, -0.0115887, 0, 5.34111, -60.9037)
