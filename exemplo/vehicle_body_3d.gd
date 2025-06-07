@@ -1,7 +1,5 @@
 extends VehicleBody3D
 
-@onready var HUD = $"../HUD"
-
 var drive: float = 4.20
 var gears: Array[float] = [3.30, 2.20, 1.80, 1.50, 1.30]
 var reverse_gear: float = -3.0
@@ -34,8 +32,8 @@ func calculate_rpm() -> float:
 	return 0
   
 func _process(delta: float) -> void:
-	HUD.atualizar_info(linear_velocity.length(), calculate_rpm())
-	HUD.atualizar_marcha(current_gear)
+	$HUD.atualizar_info(linear_velocity.length(), calculate_rpm())
+	$HUD.atualizar_marcha(current_gear)
 
 func _physics_process(delta: float) -> void:
 	acelerador = 0

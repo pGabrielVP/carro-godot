@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://danf8yuuhd45m"]
+[gd_scene load_steps=13 format=3 uid="uid://danf8yuuhd45m"]
 
 [ext_resource type="Script" uid="uid://g8og0ahwqsfg" path="res://exemplo/vehicle_body_3d.gd" id="1_x31a8"]
 [ext_resource type="Script" uid="uid://cg7eubxuf8ouv" path="res://exemplo/camera_3d.gd" id="2_n5xty"]
+[ext_resource type="PackedScene" uid="uid://4fhnj4n0l7m7" path="res://exemplo/hud.tscn" id="3_1lejk"]
 
 [sub_resource type="Curve" id="Curve_8nbig"]
 _data = [Vector2(0, 0.0880597), 0.0, 0.0, 0, 0, Vector2(0.122744, 0.117164), 1.09483, 1.09483, 0, 0, Vector2(0.963899, 1), 0.230341, 0.230341, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -97,3 +98,5 @@ mesh = SubResource("SphereMesh_uq1ss")
 transform = Transform3D(-1, -1.9253e-14, -8.74228e-08, -3.71551e-08, 0.905191, 0.425005, 7.91343e-08, 0.425005, -0.905191, 0, 2.83141, -3.6277)
 fov = 51.1
 script = ExtResource("2_n5xty")
+
+[node name="HUD" parent="." instance=ExtResource("3_1lejk")]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://it2kdyiowds2"]
+
+[ext_resource type="Script" uid="uid://bkq8aiixs158o" path="res://arcade_style_control/carro.gd" id="1_55sy5"]
+[ext_resource type="PackedScene" uid="uid://dx5yiiwhi8h6n" path="res://arcade_style_control/Models/GLB format/suv.glb" id="2_ucnnb"]
+[ext_resource type="Script" uid="uid://cmf1jcwfhl63c" path="res://arcade_style_control/camera_3d.gd" id="3_ucnnb"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rjf0v"]
+bounce = 0.1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lrs31"]
+radius = 1.0
+
+[node name="Carro" type="Node3D"]
+script = ExtResource("1_55sy5")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_rjf0v")
+gravity_scale = 10.0
+angular_damp = 5.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("SphereShape3D_lrs31")
+
+[node name="suv" parent="." instance=ExtResource("2_ucnnb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="suv"]
+collide_with_areas = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.999998, -0.000893835, -0.00162567, -0.00128861, 0.965054, 0.262048, 0.00133463, 0.26205, -0.965053, 0, 1.26963, -3.56757)
+script = ExtResource("3_ucnnb")
