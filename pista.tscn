@@ -1,0 +1,283 @@
+[gd_scene load_steps=18 format=3 uid="uid://dy2aemveihpan"]
+
+[ext_resource type="ArrayMesh" uid="uid://b27kwqyb1ebgd" path="res://pista/kenney_racing_kit/OBJ format/roadStart.obj" id="1_0fk5m"]
+[ext_resource type="ArrayMesh" uid="uid://berc1k4re8c78" path="res://pista/kenney_racing_kit/OBJ format/roadStartPositions.obj" id="2_i6cd8"]
+[ext_resource type="ArrayMesh" uid="uid://d2irkn0w35uoe" path="res://pista/kenney_racing_kit/OBJ format/roadRampLong.obj" id="4_3i42l"]
+[ext_resource type="ArrayMesh" uid="uid://dku6wc86oa260" path="res://pista/kenney_racing_kit/OBJ format/roadStraightLong.obj" id="6_ev7r8"]
+[ext_resource type="ArrayMesh" uid="uid://4sthwoiq8vm4" path="res://pista/kenney_racing_kit/OBJ format/roadCornerLarge.obj" id="7_kl7rc"]
+[ext_resource type="PackedScene" uid="uid://it2kdyiowds2" path="res://arcade_style_control/carro.tscn" id="11_4h2fr"]
+[ext_resource type="ArrayMesh" uid="uid://cqkqa7ojtddjl" path="res://pista/kenney_racing_kit/OBJ format/roadCornerLargeSand.obj" id="13_k2voo"]
+[ext_resource type="ArrayMesh" uid="uid://bndffucnyx58" path="res://pista/kenney_racing_kit/OBJ format/roadStraight.obj" id="14_7whop"]
+[ext_resource type="ArrayMesh" uid="uid://dw1aysdhr6uvi" path="res://pista/kenney_racing_kit/OBJ format/roadCornerLargeSandInner.obj" id="14_cyce6"]
+[ext_resource type="ArrayMesh" uid="uid://b5vj263rpdt4p" path="res://pista/kenney_racing_kit/OBJ format/roadCornerLargeWall.obj" id="15_m6g6j"]
+[ext_resource type="ArrayMesh" uid="uid://dxkprh834100i" path="res://pista/kenney_racing_kit/OBJ format/roadCornerLargeWallInner.obj" id="16_w8vk7"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4h2fr"]
+points = PackedVector3Array(-1.27587, 0.301618, 0.904955, -0.00549819, 0.575015, 1.09049, -0.10131, 0.0159787, 2.01548, -0.10131, -0.0158046, -0.0154753, -1.14885, 0.0159787, 2.01548, -1.2123, 0.682471, 0.93657, -1.14885, 0.0159787, -0.0154753, -0.0378617, 0.682471, 0.93657, -1.27587, -0.0158046, 1.09505, 0.0257143, -0.0158046, 1.09505, -1.17459, 0.660055, 1.08894, -0.196611, 0.0476936, -0.0154753, -0.0793221, 0.657821, 1.08833, -0.10131, -0.0158046, 2.01548, -0.196611, 0.0476936, 2.01548, -1.27587, 0.618973, 0.93657, 0.0257143, 0.58719, 0.93657, -1.02182, 0.682471, 0.904955, -1.05355, 0.0476936, -0.0154753, -1.05355, 0.0476936, 2.01548, -1.12514, 0, 0.0304929, -0.228335, 0.682471, 0.904955, 0.0257143, -0.0158046, 0.904955, -1.12514, 0, 1.96951, -1.27587, -0.0158046, 0.904955, -0.10131, 0.0159787, -0.0154753, -1.24199, 0.604102, 1.0901, -0.0411263, 0.632748, 1.08967, 0.0257143, 0.301618, 0.904955, -0.00613743, 0.650688, 0.93657)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_72ia2"]
+points = PackedVector3Array(0, 0, 2, -0.0817345, 0.02, 2, -1, 0, 2, 0, 0, 0, -0.918363, 0.02, 2, -0.0817345, 0.02, 0, -1, 0, 0, -0.918363, 0.02, 0)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ev7r8"]
+points = PackedVector3Array(0, 0, 2, -0.0817345, 0.02, 2, -1, 0, 2, 0, 0, 0, -0.0817345, 0.02, 0, -0.918363, 0.02, 2, -1, 0, 0, -0.918363, 0.02, 0)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kl7rc"]
+points = PackedVector3Array(-1.01587, 0.0158761, -0.0154753, 0.031746, 0.0158761, 2.01548, 0.031746, -0.0158668, 2.01548, 0.031746, 0.0158761, -0.0154753, -0.920504, 0.047619, 2.01548, -1.01587, -0.0158668, 2.01548, 0.031746, -0.0158668, -0.0154753, -0.06352, 0.047619, -0.0154753, -1.01587, -0.0158668, -0.0154753, -0.06352, 0.047619, 2.01548, -0.920504, 0.047619, -0.0154753, -1.01587, 0.0158761, 2.01548)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gtj4b"]
+points = PackedVector3Array(0, 0, 2, -0.0817345, 0.02, 2, -1, 0, 2, 0, 0, 0, -0.918363, 0.02, 2, -0.0817345, 0.02, 0, -1, 0, 0, -0.918363, 0.02, 0)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7umk"]
+points = PackedVector3Array(-1, 0, 0, -1, 0, 1, -0.918363, 0.02, 0, 0, 0, 0, -0.918363, 0.02, 1, 0, 0, 1, -0.0817345, 0.02, 0, -0.0817345, 0.02, 1)
+
+[node name="pista" type="Node3D"]
+
+[node name="RoadStart" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = ExtResource("1_0fk5m")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStart"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStart/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_4h2fr")
+debug_fill = false
+
+[node name="RoadStartPositions1" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.39, 0, -5.997)
+mesh = ExtResource("2_i6cd8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStartPositions1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStartPositions1/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_72ia2")
+
+[node name="RoadStartPositions2" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.39, 0, -11.996)
+mesh = ExtResource("2_i6cd8")
+
+[node name="RoadStraightLong" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.392546, 0, 5.99653)
+mesh = ExtResource("6_ev7r8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStraightLong"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStraightLong/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_ev7r8")
+
+[node name="RoadStraightLong2" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.392546, 0, 11.992)
+mesh = ExtResource("6_ev7r8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStraightLong2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStraightLong2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_kl7rc")
+
+[node name="RoadCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.394278, 0, 17.96)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.401386, -0.00182939, 17.9615)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.393343, 0.0070473, 17.9635)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.416694, -0.00520563, 17.9461)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.369616, 0.00184083, 17.9774)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStraightLong3" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.38591, -0.000359774, 11.9569)
+mesh = ExtResource("6_ev7r8")
+
+[node name="RoadCornerLarge2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -6.38849, 0, 23.9568)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -6.36452, -0.00316262, 23.9459)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -6.3887, 0.0040127, 23.9613)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -6.35582, -0.00391102, 23.9428)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -6.3842, -0.00694275, 23.9836)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadCornerLarge3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -15.384, 0, 5.964)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -15.3838, 0.00011158, 5.97527)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -15.388, 0, 5.954)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -15.3793, 0, 5.97728)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -15.377, 0, 5.938)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -18.383, 0, 5.965)
+mesh = ExtResource("14_7whop")
+
+[node name="RoadCornerLarge4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -18.375, 0, 8.963)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -18.375, 0, 8.959)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -18.379, 0, 8.97)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -18.375, 0, 8.944)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -18.383, 0, 8.992)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStraightLong5" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -21.373, 0, -3.037)
+mesh = ExtResource("6_ev7r8")
+
+[node name="RoadStraightLong6" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -21.373, 0, -9.035)
+mesh = ExtResource("6_ev7r8")
+
+[node name="RoadCornerLarge5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -6.379, 0, -30.032)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -6.381, 0, -30.025)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -6.378, 0, -30.033)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -6.376, 0, -30.025)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -6.374, 0, -30.034)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStraightLong4" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.376, 0, -24.034)
+mesh = ExtResource("6_ev7r8")
+
+[node name="RoadCornerLarge6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12.376, 0, -24.033)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12.377, 0, -24.029)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12.377, 0, -24.034)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12.374, 0, -24.027)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12.377, 0, -24.036)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadCornerLarge7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.378, 0, -18.034)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.378, 0, -18.043)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.377, 0, -18.034)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.373, 0, -18.051)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.376, 0, -18.035)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStraight2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -18.378, 0, -15.035)
+mesh = ExtResource("14_7whop")
+
+[node name="RoadCornerLarge8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -24.375, 0, -9.034)
+mesh = ExtResource("7_kl7rc")
+
+[node name="RoadCornerLargeSand8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -24.373, 0, -9.028)
+mesh = ExtResource("13_k2voo")
+
+[node name="RoadCornerLargeSandInner8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -24.377, 0, -9.042)
+mesh = ExtResource("14_cyce6")
+
+[node name="RoadCornerLargeWall8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -24.368, 0, -9.028)
+mesh = ExtResource("15_m6g6j")
+
+[node name="RoadCornerLargeWallInner8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -24.376, 0, -9.045)
+mesh = ExtResource("16_w8vk7")
+
+[node name="RoadStartPositions3" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.39, 0, -11.996)
+mesh = ExtResource("2_i6cd8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStartPositions3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStartPositions3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_gtj4b")
+
+[node name="RoadRampLong" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.38, 0, -24.037)
+mesh = ExtResource("4_3i42l")
+
+[node name="RoadStraight3" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.39, 0, -14.996)
+mesh = ExtResource("14_7whop")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadStraight3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStraight3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_o7umk")
+
+[node name="Carro" parent="." instance=ExtResource("11_4h2fr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.06236, 1.35383, -0.760311)

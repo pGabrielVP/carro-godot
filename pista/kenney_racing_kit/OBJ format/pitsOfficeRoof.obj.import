@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ba5he6whcjdp5"
+path="res://.godot/imported/pitsOfficeRoof.obj-77f2a962252ba74b32208868ef67393e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pitsOfficeRoof.obj-77f2a962252ba74b32208868ef67393e.mesh"]
+
+source_file="res://pista/kenney_racing_kit/OBJ format/pitsOfficeRoof.obj"
+dest_files=["res://.godot/imported/pitsOfficeRoof.obj-77f2a962252ba74b32208868ef67393e.mesh", "res://.godot/imported/pitsOfficeRoof.obj-77f2a962252ba74b32208868ef67393e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
