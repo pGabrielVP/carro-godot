@@ -132,7 +132,7 @@ points = PackedVector3Array(-1, 0, 0, -1, 0, 1, -0.918363, 0.02, 0, 0, 0, 0, -0.
 [node name="pista" type="Node3D"]
 
 [node name="RoadStart" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.389, 0, 21.002)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.389, 0, 21.047)
 mesh = ExtResource("1_0fk5m")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStart"]
@@ -150,7 +150,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.615, 0.00995759, 1.00252)
 shape = SubResource("BoxShape3D_vrmrj")
 
 [node name="RoadStartPositions1" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, 9.00747)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, 9.052)
 mesh = ExtResource("2_i6cd8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStartPositions1"]
@@ -159,7 +159,7 @@ mesh = ExtResource("2_i6cd8")
 shape = SubResource("ConvexPolygonShape3D_72ia2")
 
 [node name="RoadStraightLong" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.393, 0, 33.0029)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.393, 0, 33.043)
 mesh = ExtResource("6_ev7r8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStraightLong"]
@@ -168,7 +168,7 @@ mesh = ExtResource("6_ev7r8")
 shape = SubResource("ConvexPolygonShape3D_7whop")
 
 [node name="RoadStraightLong2" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.393, 0, 44.9999)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.393, 0, 45.04)
 mesh = ExtResource("6_ev7r8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStraightLong2"]
@@ -511,7 +511,7 @@ transform = Transform3D(-6, 0, -9.05975e-07, 0, 6, 0, 9.05975e-07, 0, -6, -48.38
 mesh = ExtResource("16_w8vk7")
 
 [node name="RoadStartPositions3" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, -3.02413)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, -2.944)
 mesh = ExtResource("2_i6cd8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStartPositions3"]
@@ -529,7 +529,7 @@ mesh = ExtResource("4_3i42l")
 shape = SubResource("ConvexPolygonShape3D_7qyhe")
 
 [node name="RoadStraight3" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, -9.0361)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.39, 0, -8.941)
 mesh = ExtResource("14_7whop")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStraight3"]
