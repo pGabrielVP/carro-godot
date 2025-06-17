@@ -26,7 +26,7 @@ polygon = PackedVector2Array(-10, 0, -10, 2, 10, 2, 10, 0)
 mode = 2
 path_node = NodePath("..")
 path_interval_type = 0
-path_interval = 0.1
+path_interval = 0.5
 path_simplify_angle = 0.0
 path_rotation = 2
 path_rotation_accurate = false
@@ -36,4 +36,4 @@ path_u_distance = 1.0
 path_joined = true
 
 [node name="Carro" parent="." instance=ExtResource("1_2jh14")]
-transform = Transform3D(-0.0115887, 0, -0.999933, 0, 1, 0, 0.999933, 0, -0.0115887, 0, 5.34111, -60.9037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.63444, -61.9782)
