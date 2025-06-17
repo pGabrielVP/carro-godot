@@ -1,4 +1,4 @@
-[gd_scene load_steps=317 format=3 uid="uid://dy2aemveihpan"]
+[gd_scene load_steps=318 format=3 uid="uid://dy2aemveihpan"]
 
 [ext_resource type="ArrayMesh" uid="uid://b27kwqyb1ebgd" path="res://pista/kenney_racing_kit/OBJ format/roadStart.obj" id="1_0fk5m"]
 [ext_resource type="ArrayMesh" uid="uid://berc1k4re8c78" path="res://pista/kenney_racing_kit/OBJ format/roadStartPositions.obj" id="2_i6cd8"]
@@ -926,6 +926,9 @@ points = PackedVector3Array(0, 0.499996, 2, -0.0817345, 0.52, 2, -1, 0.499996, 2
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7umk"]
 points = PackedVector3Array(-1, 0, 0, -1, 0, 1, -0.918363, 0.02, 0, 0, 0, 0, -0.918363, 0.02, 1, 0, 0, 1, -0.0817345, 0.02, 0, -0.0817345, 0.02, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o77cu"]
+points = PackedVector3Array(-1, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 1)
 
 [node name="pista" type="Node3D"]
 
@@ -2378,6 +2381,11 @@ shape = SubResource("ConvexPolygonShape3D_v8jmn")
 [node name="Grass" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 72.4171, -0.11, -85.778)
 mesh = ExtResource("12_u1bnx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Grass"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_o77cu")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.00363023, 0.999993, 0, -0.999993, 0.00363023, 0, 34.8058, 0)
