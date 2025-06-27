@@ -984,6 +984,7 @@ mesh = ExtResource("7_kl7rc")
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadCornerLarge"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RoadCornerLarge/StaticBody3D"]
+transform = Transform3D(0.999932, 0, 0.0116585, 0, 1, 0, -0.0116585, 0, 0.999932, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_4h2fr")
 
 [node name="RoadCornerLargeSand" type="MeshInstance3D" parent="."]
